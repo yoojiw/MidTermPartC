@@ -19,9 +19,10 @@ public class TestUserprofile {
         Scanner sc = new Scanner(System.in);
         System.out.println("there are 4 genre : Comedy Drama Action Mystery. select one");
         String inputGenre = sc.next();
+        System.out.println("input your Id : ");
+        String inputId = sc.next(); 
         
-        
-        UserProfile profile = new UserProfile("ID12345", inputGenre); 
+        UserProfile profile = new UserProfile(inputId, inputGenre); 
         
         System.out.println("userProfile was created");
        
